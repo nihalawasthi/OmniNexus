@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>OmniNexus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./resources/css/global.css">
+    <link rel="stylesheet" href="./resources/css/components/headerFooter.css">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <link rel="stylesheet" href="./resources/css/modal.css">
+
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/icons/OmnitrixSymbol.png" type="image/icon type">
+</head>
+
+<body onload="classicTab()">
+    <div id="content">
+        <main>
+            <section class="nav-tab-menu">
+                <nav>
+                    <ul>
+                        <li class="navTabBtn  activeTabBtn" onclick="classicTab()">Classic</li>
+                        <li class="navTabBtn" onclick="alienForceAlienTab()" id="alienForce">Alien Force</li>
+                        <li class="navTabBtn" onclick="ultimateAlienTab()">Ultimate Alien</li>
+                        <li class="navTabBtn" onclick="omniverseAlienTab()">Omniverse</li>
+                        <li class="navTabBtn" onclick="rebootTab()">Reboot</li>
+                    </ul>
+                </nav>
+            </section>
+            <hr style="height: 2px; color: white;">
+            <section id="nav-tab-content-os" class="nav-content">
+                <div id="loading">
+                    <div>
+                        <img src="./assets/img/icons/OmnitrixSymbol.png" alt="Omnitrix" class="rotate">
+                    </div>
+                    <p>Loading...</p>
+                </div>
+                <ul id="os-cards"></ul>
+            </section>
+            <section id="nav-tab-content-af" class="nav-content">
+                <ul id="af-cards"></ul>
+                <ul id="af-os-cards"></ul>
+            </section>
+            <section id="nav-tab-content-ua" class="nav-content">
+                <ul id="ua-cards"></ul>
+                <ul id="ua-ultimate-cards"></ul>
+                <ul id="ua-os-cards"></ul>
+            </section>
+            <section id="nav-tab-content-ov" class="nav-content">
+                <ul id="ov-cards"></ul>
+                <ul id="ov-os-cards"></ul>
+                <ul id="ov-af-cards"></ul>
+                <ul id="ov-ua-cards"></ul>
+            </section>
+            <section id="nav-tab-content-rb" class="nav-content">
+                <ul id="rb-cards"></ul>
+                <ul id="rb-tunado-cards"></ul>
+                <ul id="rb-kix-cards"></ul>
+                <ul id="rb-nauta-cards"></ul>
+            </section>
+        </main>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-body">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2></h2>
+            </div>
+            <div class="modal-content">
+                <div id="loading">
+                    <div>
+                        <img src="./assets/img/icons/OmnitrixSymbol.png" alt="Omnitrix Simbolo" class="rotate">
+                    </div>
+                    <p>If the images have not loaded, close this pop-up and open it again.</p>
+                </div>
+                <ul class="modal-card-list">
+                </ul>
+                <div class="modal-alt-forms">
+                    <div class="modal-alt-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="height: 2px; color: white;">
+    <footer>
+        <div id="copyright">
+            <p>Ben 10 image rights belong to <a href="https://www.cartoonnetwork.com.br/"
+                    target="_blank">CN</a> and <a href="https://manofaction.tv/">Man of Action</a>, This is just a Fanmade website.</p>
+        </div>
+        <div id="credits">
+            <p>Developed by: <a href="https://nihalawasthi.github.io" target="_blank">Nihal Awasthi</a></p>
+            </div>
+    </footer>
+
+    <div onclick="topFunction()" id="backToTopButton" title="Go to top">
+        <div>
+            <i class="fas fa-arrow-up"></i>
+            <img src="./assets/img/icons/back-to-top-icon.png" alt="back to top">
+        </div>
+    </div>
+
+    <script src="./resources/js/components/navbar.js"></script>
+    <script src="./resources/js/aliens/ben-prime/benPrimeAliens.js"></script>
+    <script src="./resources/js/aliens/benReboot.js"></script>
+    <script src="./resources/js/components/backToTopButton.js"></script>
+    <script src="./resources/js/modal.js"></script>
+</body>
+
+</html>

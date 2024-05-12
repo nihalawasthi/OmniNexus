@@ -1,0 +1,163 @@
+/*================== HEADER ==================*/
+
+header {
+    background-color: var(--green2);
+}
+
+#headerNavBar > div {
+    display: none;
+}
+
+#navBarLista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 500;
+    list-style: none;
+}
+
+#navBarLista li:not(.dropdown-content li) {
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+#navBarLista li a:not(.dropdown-content li a) {
+    text-decoration: none;
+    color: white;
+}
+
+#navBarLista li a:not(.dropdown-content li a):hover {
+    font-weight: 500;
+    color: black;
+}
+
+/*==== DROPDOWN ====*/
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--green3);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    margin-top: 0.313rem;
+}
+
+.dropdown-content li {
+    padding: 1rem;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content li a:hover {
+    font-style: italic;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*================== FOOTER ==================*/
+
+footer {
+    background-color: var(--green1);
+    text-align: center;
+    color: #ffffff;
+    padding: 1.375rem 0 0.625rem 0;
+}
+
+footer h3 {
+    font-family: "Ben10-font";
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+#copyright {
+    margin: 0.75rem 0 1.875rem 0;
+}
+
+#copyright p {
+    font-size: 0.875rem;
+}
+
+#copyright a, #credits a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#copyright a:hover, #credits a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#copyright a:active, #credits a:active {
+    color: var(--grey1);
+    background-color: black;
+} 
+
+#credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#credits p {
+    font-size: 0.813rem;
+    margin-right: 0.625rem;
+}
+
+
+
+/*================== @MEDIA ==================*/
+
+@media (max-width: 600px) {
+
+    .hideShowBtn {
+        display: block !important;
+    }
+
+    #navBarLista {
+        flex-direction: column;
+        align-items: center;
+        background-color: #333333 !important;
+        padding: 0.625rem 0;
+    }
+
+    #navBarLista {
+        display: none;
+    }
+
+    #navBarLista li a {
+        display: flex;
+    }
+
+    #headerNavBar > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem
+    }
+
+    #headerNavBar > div a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    .dropdown-content {
+        position: relative;
+    }
+}

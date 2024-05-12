@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+
+/*
+================================================================
+*/
+
+
+
+/*====== MAIN CONTENT ======*/
+
+#content main {
+    padding-top: 0 !important;
+}
+
+#content #presentation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    max-width: 1250px;
+    width: 80%;
+
+    overflow: hidden;
+    border-radius: 1.25rem;
+    margin: 0 auto 3.125rem;
+    padding: 1rem 0;
+
+    background-color: black;
+    color: white;
+}
+
+#content #presentation div {
+    width: 231px;
+}
+
+#content #presentation p {
+    font-style: italic;
+    font-size: 1.6875rem;
+    line-height: 1.5;
+    width: 67%;
+}
+
+#content #presentation div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#content .nav-tab-menu {
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 0.625rem 0.625rem 0 0
+}
+
+#content .nav-tab-menu nav {
+    padding: 0.75rem;
+}
+
+#content .nav-tab-menu nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#content .nav-tab-menu nav ul li:last-child {
+    margin-right: 0 !important;
+}
+
+/* #content .nav-tab-menu nav ul li:hover {
+    border-color: white;
+    border-radius: 6px;
+} */
+
+#content main .nav-content {
+    width: 93.5%;
+    margin: 0 auto;
+}
+
+#content main  #synopsis {
+    text-align: center;
+    margin: 1.5rem 0 3rem;
+}
+
+#content main  #synopsis h1 {
+    font: normal 2.5rem 'Roboto', sans-serif;
+    padding-bottom: 25px;
+}
+
+#content main  #synopsis p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#content main  #synopsis a {
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+    font-style: italic; 
+    text-decoration: none;
+}   
+
+#content main  #indice-list {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0.125rem;
+    padding: 0.938rem 0.813rem 0.938rem;
+    margin-bottom: 3.125rem;
+    box-shadow: 4px 4px 0px -1px rgb(0 0 0 / 75%);
+}
+
+#content main  #indice-list p{
+    font-size: 1.5rem;
+    margin-bottom: 0.313rem;
+    font-weight: 500;
+}
+
+#content main  #indice-list li {
+    font-size: 0.875rem;
+    margin-bottom: 0.313rem;
+    font-style: normal;
+}
+
+#content main  #indice-list li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#content main  #indice-list a:hover {
+    text-decoration: underline;
+}
+
+
+#content main  .aliens-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#content main  .alien-card {
+    border: 2px white solid;
+    width: 202px;
+    list-style: none;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#content main  .alien-card-img {
+    width: 100%;
+    height: 248px;
+    padding: 0.625rem;
+
+    background-image: url(../../assets/img/bg/retangulo1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+
+    overflow: hidden;
+}
+
+#content main  .alien-card-img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#content main  .alien-card-description {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#content main  .alien-card-description a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#content main  .alien-card-description a:hover {
+    font-style: italic;
+    text-decoration: underline !important;
+}
+
+#content main  .alien-card-description p {
+    margin: 0.5rem 0;
+    pointer-events: none;
+    display: inline-block;
+}
+
+.alienDivisor {
+    width: 100%;
+}
+
+.alienDivisor h4 {
+    margin-top: 4%;
+}
+
+.alienDivisor hr {
+    margin: 1rem 0;
+    width: 90vw;
+    border: 2px solid rgba(255, 255, 255, 0.37) !important;
+}
+
+@media (max-width: 480px) {
+    #content main  .aliens-cards {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    main {
+        width: 90%;
+    }
+
+    #content #presentation {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #presentation {
+
+        padding: 1rem !important;
+    }
+
+    #presentation p {
+
+        font-size: 1.438rem !important;
+        text-align: center;
+        width: auto !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .alien-card .alien-card-img:hover {
+        transition: 1s all;
+        transform: scale(1.2);
+        z-index: 5 !important;
+    }    
+}

@@ -1,0 +1,244 @@
+#myModal::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+
+/* ==================================== */
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    /* padding-top: 100px; Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal body */
+.modal-body {
+    max-width: 1140px;
+    width: 90%;
+    overflow: hidden;
+
+    position: relative;
+    background-color: #fefefe;
+    margin: 1.75rem auto;
+    /* padding: 0; */
+    /* border: 1px solid #888; */
+    border-radius: 0.3rem;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    /* color: white; */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--grey3);
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+
+/* ===================== MODAL CARDS ====================== */
+
+.modal-body h2 {
+    font-weight: 500;
+}
+
+.modal-card-list {
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    grid-template-columns: 1fr 1fr;
+
+    list-style: none;
+    padding: 1rem;
+}
+
+.modal-card {
+    /* width: 350px; */
+    margin: 1% auto;
+    /* height: 350px; */
+}
+
+.modal-card img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-card div {
+    width: 100%;
+}
+
+.modal-card div img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ===================== MODAL ALT FORMS ====================== */
+
+.modal-alt-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.modal-alt-content nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--grey3);
+    margin-bottom: 1rem;
+}
+
+.modal-alt-content nav div {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    background-color: var(--white1);
+    border-color: var(--grey3) var(--grey3) var(--white1);
+    margin-bottom: -1px;
+}
+
+.modal-alt-forms-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.modal-alt-forms-card {
+    max-width: 400px;
+    width: 100%;
+}
+
+.modal-alt-forms-card img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* =============== BEM PRIME =============== */
+
+#primeBenOsRipjaws7, #primeBenOsSnareOh3, #primeBenOsWildMutt5, #primeBenOsHeatBlast5,  #primeBenOsWildvine3, #primeBenOsDitto3, #primeBenOsGhostFreak5, #primeBenOsFrankenstrike5, #primeBenOsUpChuckP5, #primeBenOsStinkFly5, #primeBenOsBlitzWolfer5, #primeBenOsGreyMatter5, #primeBenOsEyeGuy5, #primeBenOsWayBig3, #primeBenOsXlr85, #primeBenAfAlienX3, #primeBenAfJetRay5, #primeBenAfBigChill5, #primeBenAfUpchuck3, #primeBenAfCannonbolt1, #primeBenUaWaterHazard3, #primeBenUaAmpfibian3, #primeBenUaArmodrillo3, #primeBenUaUltimateBigChill3, #primeBenUaUltimateEchoEcho3, #primeBenUaUltimateSpiderMonkey3, #primeBenUaUltimateWayBig3, #primeBenUaRipJaws5, #primeBenUaFourArms3, #primeBenUaGhostFreak1, #primeBenUaUpgrade1, #primeBenOvAstrodactyl5, #primeBenOvMole-Stache3, #primeBenOvBullfrag7, #primeBenOvCrashhopper5, #primeBenOvGutrot3, #primeBenOvWhampire5, #primeBenOvClassicFourArms3, #primeBenOvClassicBuzzShock3, #primeBenOvClassicHeatBlast5, #primeBenOvClassicDitto3, #primeBenOvClassicGhostFreak3, #primeBenOvClassicFrankenStrike3, #primeBenOvClassicUpchuck3, #primeBenOvClassicStinkFly3, #primeBenOvClassicBlitzWolfer3, #primeBenOvClassicGreyMatter3, #primeBenOvClassic3, #primeBenOvAfBigChill3, #primeBenOvAfChromaStone3, #primeBenOvAfNanoMech3, #primeBenOvUaAmpfibian3, #primeBenOvUaAmpfibian3, #primeBenRbHeatBlast5, #primeBenRbTunadoHeatBlast7, #primeBenRbKixFourArms5  {
+    grid-column: 1/3;
+}
+
+
+/* ===== CLASSIC ===== */
+
+#primeBenOsFrankenstrike3 {
+    height: 400px;
+}
+
+#primeBenOsXlr8Modal li {
+    height: 300px;
+}
+
+
+#primeBenAfBrainStorm1, #primeBenOvAfSwampFireBlossoming1, #primeBenRbJetray1, #primeBenRbWildvine1, #primeBenRbHumungousaur1, #primeBenRbOverFlow1 {
+    display: none;
+}
+
+
+/* ===================== @MEDIA ====================== */
+
+@media (max-width: 950px) {
+
+    .modal-card {
+        grid-column: 1/3;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+   
+    .modal-card {
+        height: 350px;
+    }
+
+
+    #primeBenOsRipjaws7, #primeBenOsCannonBoltModal li, #primeBenOsSnareOh3, #primeBenOsWildMuttModal li, #primeBenOsWildvine3, #primeBenOsDiamondHead6, #primeBenOsDitto3, #primeBenOsFrankenstrike3, #primeBenOsFrankenstrike4, #primeBenOsFrankenstrike5, #primeBenOsUpChuckP5,#primeBenOsStinkFly5  #primeBenOsBlitzWolferModal li, #primeBenOsEyeGuy5, #primeBenOsUpgrade3, #primeBenOsEyeGuyModal li, #primeBenOsUpgrade4, #primeBenUaUltimateSpiderMonkey3{
+        height: auto !important;
+    }
+
+    #primeBenAfAlienX3, #primeBenAfJetRayModal li, #primeBenAfBrainStormModal li, #primeBenAfBigChillBaby1, #primeBenAfBigChillBaby5, #primeBenAfBigChillBaby6, #primeBenAfBigChillModal li:not(li:first-child), #primeBenAfChromastone4, #primeBenAfHumungousaur4, #primeBenAfHumungousaur5, #primeBenAfHumungousaur6, #primeBenAfUpchuck2, #primeBenAfUpchuck3, #primeBenAfSpidermonkeyModal li {
+        height: auto !important;
+    }
+
+    #primeBenUaFasttrack4, #primeBenUaWaterHazard3, #primeBenUaAmpfibian3, #primeBenUaEatle2, #primeBenUaEatle3, #primeBenUaEatle4, #primeBenUaShockSquatch2, #primeBenUaTerraSpin2, #primeBenUaTerraSpin3, #primeBenUaTerraSpin4, #primeBenUaUltimateCannonboltModal li:not(li:first-child), #primeBenUaUltimateWildmuttModal li, #primeBenUaUltimateBigChillModal li:not(li:first-child), #primeBenUaUltimateSpiderMonkeyModal li, #primeBenUaRipJawsModal li{
+        height: auto !important;
+    }
+
+    #primeBenOvAstrodactylModal li:not(li:first-child), #primeBenOvMole-Stache2, #primeBenOvMole-Stache3, #primeBenOvBloxx5, #primeBenOvBloxx6, #primeBenOvBullfrag2, #primeBenOvKickinHawk3, #primeBenOvKickinHawk4, #primeBenOvCrashhopper5, #primeBenOvFeedback3, #primeBenOvFeedback4, #primeBenOvGravattackModal li, #primeBenOvGutrot2, #primeBenOvWhampire4, #primeBenOvWhampire5, #primeBenOvWalkatrout2, #primeBenOvClassicFourArms3, #primeBenOvClassicRipJaws2, #primeBenOvClassicRipJaws3, #primeBenOvClassicArctiguana2, #primeBenOvClassicArctiguana4, #primeBenOvClassicCannonBoltModal li:not(li:first-child), #primeBenOvClassicWildMuttModal li, #primeBenOvClassicBuzzShock3, #primeBenOvClassicHeatBlast3, #primeBenOvClassicHeatBlast4, #primeBenOvClassicWildVine1, #primeBenOvClassicWildVine2, #primeBenOvClassicWildVine4, #primeBenOvClassicDiamondHead4, #primeBenOvClassicFrankenStrike3, #primeBenOvClassicUpchuck2, #primeBenOvClassicUpchuck3, #primeBenOvClassicStinkFly3, #primeBenOvClassicBlitzWolferModal li:not(li:last-child), #primeBenOvClassicGreyMatter3, #primeBenOvClassicEyeGuyModal li:not(li:first-child), #primeBenOvClassic3, #primeBenOvClassicXlr83, #primeBenOvClassicXlr84, #primeBenOvAfBrainStormModal li, #primeBenOvAfBigChill3, #primeBenOvAfChromaStone2, #primeBenOvAfEchoEchoModal li, #primeBenOvAfHumungousaur4, #primeBenOvAfSwampFire2, #primeBenOvAfSwampFireBlossoming5, #primeBenOvAfSpiderMonkeyModal li:not(#primeBenOvAfSpiderMonkey2), #primeBenOvAfNanoMech3, #primeBenOvAfRath3{
+        height: auto !important;
+    }
+
+    #primeBenOvUaWaterHazard4, #primeBenOvUaWaterHazard6, #primeBenOvUaAmpfibian3, #primeBenOvUaArmodrillo2, #primeBenOvUaArmodrillo4, #primeBenOvUaClockWork2, #primeBenOvUaNrg4, #primeBenOvUaShockSquatch3, #primeBenOvUaShockSquatch4, #primeBenOvUaTerraSpinModal li:not(#primeBenOvUaTerraSpin2) {
+        height: auto !important;
+    }
+
+    #primeBenRbFourArms3, #primeBenRbJetray4, #primeBenRbJetray5, #primeBenRbCannonBolt3, #primeBenRbCannonBolt5, #primeBenRbCannonBolt6, #primeBenRbHeatBlast5, #primeBenRbShockRockModal li:not(#primeBenRbShockRock2), #primeBenRbWildvine7, #primeBenRbHumungousaurModal li:not(#primeBenRbHumungousaur4, #primeBenRbHumungousaur7), #primeBenRbOverFlowModal li:not(#primeBenRbOverFlow5), #primeBenRbGax4, #primeBenRbGreyMatter4, #primeBenRbRathModal li:not(#primeBenRbRath1), #primeBenRbSlapBack4, #primeBenRbUpGrade3, #primeBenRbUpGrade4, #primeBenRbWayBig5, #primeBenRbXlr83, #primeBenRbXlr84{
+        height: auto !important;
+    }
+    
+    #primeBenRbTunadoFourArmsModal li, #primeBenRbTunadoHeatBlastModal li:not(#primeBenRbTunadoHeatBlast1, #primeBenRbTunadoHeatBlast2), #primeBenRbTunadoWildVineModal li:not(#primeBenRbTunadoWildVine1), #primeBenRbTunadoDiamondHeadModal li:not(#primeBenRbTunadoDiamondHead1), #primeBenRbTunadoOverFlowModal li, #primeBenRbTunadoStinkFly4, #primeBenRbTunadoGreyMatterModal li, #primeBenRbTunadoXlr8Modal li:not(#primeBenRbTunadoXlr81), #primeBenRbKixFourArms1, #primeBenRbKixFourArms4, #primeBenRbKixFourArms5, #primeBenRbKixJetRay3, #primeBenRbKixCannonBoltModal li, #primeBenRbKixHeatBlast1, #primeBenRbKixHeatBlast2, #primeBenRbKixHeatBlast3, #primeBenRbKixShockRock1, #primeBenRbKixShockRock2, #primeBenRbKixDiamondHeadModal li:not(#primeBenRbKixDiamondHead3, #primeBenRbKixDiamondHead4), #primeBenRbKixHumungousaurModal li:not(#primeBenRbKixHumungousaur1, #primeBenRbKixHumungousaur2), #primeBenRbKixRathModal li, #primeBenRbKixModal li, #primeBenRbNautaJetRayModal li, #primeBenRbNautaHumungousaurModal li{
+        height: auto !important;
+    }
+}
